@@ -19,19 +19,20 @@ How to run Terraform commands through CLI
 
 Terraform config files are written in HCL(Hashicorp configuration language) . HCL is strutured configuration language, which basically focus on intended goal rather than the steps to reach that goal. There are 5 basics building blocks of terraform configuration files
 
-# Provider - One of the cloud providers
+**Provider** - One of the cloud providers
 Terraform support lot of providers , so you have providers for GCP , AWS , Docker , Azure etc. This guide is designed for GCP. For other cloud providers please check terrafrom documentation at https://learn.hashicorp.com/terraform.
 Providers are binaries. They work with terraform CLI to intract with remote systems to provision the infra.
 Almost all the terraform providers are written in golang.
-Resource - These are basically reference to the individual service which provider has to offer and help in creating resources In this guide we created a VPC network , a compute instance , a random number and a google storage bucket.
-# Provisioner - They are inked to a resource and declared under resource section. They are executed after a resource a created or before a resource is destroyed.
+**Resource** - These are basically reference to the individual service which provider has to offer and help in creating resources In this guide we created a VPC network , a compute instance , a random number and a google storage bucket.
+**Provisioner** - They are inked to a resource and declared under resource section. They are executed after a resource a created or before a resource is destroyed.
 Provisioners are used to execute scripts on local or on remote machine.
-Output - output returns the values after creation of resources. It acts as input to other resource as well
-Module -Centralized Structure and provides reusability to your code. Based on DRY (DONT REPEAT YOURSELF) pronciple of software design
+**Output** - output returns the values after creation of resources. It acts as input to other resource as well
+**Module** -Centralized Structure and provides reusability to your code. Based on DRY (DONT REPEAT YOURSELF) pronciple of software design
 Modules are of 2 types : local and global. We used a local module in this guide.
 Local modules are the modules which reside on the same machine as your other terraform config files.
 Global modules reside in a certral registry like terrafrom registry - https://registry.terraform.io/
-Variables in Terraform
+
+# Variables in Terraform
 
 Terraform allows to centrally define the values that can be used in multiple terraform configuration blocks
 Terraform has string , number , bool , list , map types of variable.
@@ -41,8 +42,7 @@ Override default value, define in terraform.tfvars. region = "us-east-2"
 To access these variables in resource block simply use var.region
 Command Line flags(terraform apply -var 'regions=us-east1')
 Variable definition file(terraform apply -var-file 'terraform.tfvars')
-Documentation - https://www.terraform.io/docs/language/values/variables.html.
-Prerequisite
+**Documentation** - https://www.terraform.io/docs/language/values/variables.html.
 
 # how to use this guide?
 
@@ -80,7 +80,7 @@ The management of terraform state file becomes an issue.
 The management of variables especially sensitive ones becomes an issue.
 Private registry to store remote modules so that they can used by others.
 Terraform cloud takes care of all this as SAAS.
-Documentation : https://learn.hashicorp.com/tutorials/terraform/cloud-sign-up?in=terraform/cloud-get-started
+**Documentation** : https://learn.hashicorp.com/tutorials/terraform/cloud-sign-up?in=terraform/cloud-get-started
 Terraform Enterprise
 
 This is enterprise version of terraform cloud.
