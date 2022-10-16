@@ -89,8 +89,8 @@ Its used by big enterprises.
 - When writing modules always make them generic so that they can shared and used with other teams.
 # Terraform Associate Certification
 
-https://www.hashicorp.com/certification/terraform-associate
-https://www.pluralsight.com/paths/hashicorp-certified-terraform-associate
+- https://www.hashicorp.com/certification/terraform-associate
+- https://www.pluralsight.com/paths/hashicorp-certified-terraform-associate
 # Documentation
 
 - Terraform Detailed documentation : https://www.terraform.io/docs/index.html
