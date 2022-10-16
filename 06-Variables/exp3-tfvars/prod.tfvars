@@ -1,0 +1,1 @@
+myname="PROD-EC2"

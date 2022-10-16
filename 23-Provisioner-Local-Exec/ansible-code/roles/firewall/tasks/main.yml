@@ -1,0 +1,5 @@
+---
+# tasks file for firewall
+- name: Disable Firewall
+  service: name=ufw state=stopped enabled=False
+

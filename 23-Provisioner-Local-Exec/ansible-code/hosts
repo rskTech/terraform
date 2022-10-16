@@ -1,0 +1,13 @@
+18.218.177.229
+
+
+
+
+[web]
+18.218.177.229
+
+
+
+[web:vars]
+ansible_ssh_user=ubuntu
+ansible_ssh_private_key_file="/root/.ssh/my-ssh-key.pem"

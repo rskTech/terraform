@@ -1,0 +1,15 @@
+---
+# tasks file for webserver
+
+- name: Install Apache Packages 
+  apt: name=apache2 state=present
+
+- name: Start Apache Service 
+  service: name=apache2 state=started
+
+- name: Deploy Custom Web Page 
+  copy: src=files/index.html dest=/var/www/html/index.html
+
+
+- name: Deploy Custom Web Template
+  template: src=templates/info.j2 dest=/var/www/html/info.html
