@@ -1,11 +1,8 @@
-# terraform
-Getting started with terraform
-
 # What is Terraform
 
 Terraform is an open source IAC(infra as code) tool written in golang for building, changing, and versioning infrastructure safely and efficiently. With Terraform we can provision infra through code/software to achieve consistent and predictable environments. With Terraform an organization is not locked with one cloud provider and can opt for hybrid cloud infra.
 
-Terraform is created by HashiCorp
+**Terraform is created by HashiCorp**
 
 Terraform is declarative & it uses HCL(HashiCorp Configuration Language) to declare the desired state of your infra.
 
@@ -18,18 +15,16 @@ Basic commands are init , plan , apply and destroy.
 you can get it from https://www.terraform.io/downloads.html as per your operating system.
 How to run Terraform commands through CLI
 
-alt Terraform CLI
-
-Building blocks of Terraform configuration files
+# Building blocks of Terraform configuration files
 
 Terraform config files are written in HCL(Hashicorp configuration language) . HCL is strutured configuration language, which basically focus on intended goal rather than the steps to reach that goal. There are 5 basics building blocks of terraform configuration files
 
-Provider - One of the cloud providers
+# Provider - One of the cloud providers
 Terraform support lot of providers , so you have providers for GCP , AWS , Docker , Azure etc. This guide is designed for GCP. For other cloud providers please check terrafrom documentation at https://learn.hashicorp.com/terraform.
 Providers are binaries. They work with terraform CLI to intract with remote systems to provision the infra.
 Almost all the terraform providers are written in golang.
 Resource - These are basically reference to the individual service which provider has to offer and help in creating resources In this guide we created a VPC network , a compute instance , a random number and a google storage bucket.
-Provisioner - They are inked to a resource and declared under resource section. They are executed after a resource a created or before a resource is destroyed.
+# Provisioner - They are inked to a resource and declared under resource section. They are executed after a resource a created or before a resource is destroyed.
 Provisioners are used to execute scripts on local or on remote machine.
 Output - output returns the values after creation of resources. It acts as input to other resource as well
 Module -Centralized Structure and provides reusability to your code. Based on DRY (DONT REPEAT YOURSELF) pronciple of software design
@@ -49,7 +44,7 @@ Variable definition file(terraform apply -var-file 'terraform.tfvars')
 Documentation - https://www.terraform.io/docs/language/values/variables.html.
 Prerequisite
 
-how to use this guide?
+# how to use this guide?
 
 Download terraform binary from terraform website https://www.terraform.io/downloads.html.
 Add binary to path.
@@ -77,7 +72,7 @@ Now grab a coffee and let terraform do all the magic. You will see your resource
 
 And this is all. Happy terraforming !!.
 
-Terraform Cloud
+# Terraform Cloud
 
 While running terraform locally gives you fill control, it has its own challenges when working in a team.
 Anyone having the key can deploy infra without any approval.
@@ -90,7 +85,7 @@ Terraform Enterprise
 
 This is enterprise version of terraform cloud.
 Its used by big enterprises.
-Best Practices
+# Best Practices
 
 Always give structure to your configuration files. Don't put everything in one file.
 Always write your code with reusability in mind. Try to write modules for each resource type.
@@ -99,7 +94,7 @@ Terraform Associate Certification
 
 https://www.hashicorp.com/certification/terraform-associate
 https://www.pluralsight.com/paths/hashicorp-certified-terraform-associate
-Documentation
+# Documentation
 
 Terraform Detailed documentation : https://www.terraform.io/docs/index.html
 Getting Started with GCP : https://learn.hashicorp.com/collections/terraform/gcp-get-started
