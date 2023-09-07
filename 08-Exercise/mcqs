@@ -1,0 +1,66 @@
+1. 1. Terraform is a .............
+ Code Software - correeect
+ Text Editor
+ Programming Language
+ Photo Editor
+
+
+2. 2. terraform is developed by ..............
+ Google
+ Microsoft
+ HashiCorp  - correct
+ None of above
+
+
+3. Terraform is written in which language ..................
+ Java
+ Python
+ Perl
+ Go - correcct
+
+
+
+4. Terraform supports a number of cloud infrastructure providers such as ................
+ Amazon web services
+ IBM Cloud
+ Microsoft Azure
+ All of the Above  - ccorrectc
+
+5. Terraform uses declarative configuration to describe the desired final state.
+ True  - ccorrecctc
+ False
+
+
+6. 14. Code in the Terraform language is stored in plain text files with the ........... file extension
+ .tf - ccorrect
+ .py
+ .hcl
+ None of above
+
+
+ 7. Terraform relies on plugins called ........... to interact with remote systems.
+ Sliders
+ Providers - correct
+ Modules
+ None of above
+
+
+ 8. Is Terraform cloud-agostic?
+ Yes
+ No
+
+ 9. What is the command to create infrastructure?
+ Terraform plan
+ Terraform apply  - ccorrecct
+ terraform show
+ None of above
+
+
+ 10. Terraform is a tool for .................. infrastructure safely and efficiently.
+ building
+ changing
+ versioning
+ All of the above  - coorrect
+
+ 
+
