@@ -1,6 +1,6 @@
 # First Demo Exercise to test our learning.
 
-## We would like to provision the AWS Infa as per the following Conditions:
+## We would like to provision the AWS Infra as per the following Conditions:
 
 ### 1: Create 4 Instances each in two diffrent Regions. ( us-east-2 & us-west-2 ) 
 ### 2: It should have one backend & frontend Instance in each avaliablity zone. 
